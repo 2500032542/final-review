@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Patients | MediCare</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare </a><nav><a href="admin.html">Admin</a><a href="doctors.html">Doctors</a><a href="appointments.html">Appointments</a><a href="#">Logout</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+<div class="page-head"><div><span class="eyebrow">Patient Module</span><h1>Patient Management</h1><p class="muted">Registered users are displayed here.</p></div></div>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Email</th><th>Role</th></tr></thead><tbody id="patientTable"></tbody></table></div>
+</main><script src="js/script.js"></script><script>protectPage("admin"); renderPatients();</script>
+</body></html>

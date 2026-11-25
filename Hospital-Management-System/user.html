@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Portal | MediCare Hospital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare Patient Portal</a><nav><a href="user.html">Dashboard</a><a href="doctors.html">Doctors</a><a href="appointments.html">Appointments</a><a href="pharmacy.html">Pharmacy</a><a href="billing.html">Billing</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+  <div class="page-head"><div><span class="eyebrow">User Module</span><h1>Patient Dashboard</h1><p class="muted">Book appointments and view hospital information.</p></div><div id="sessionUser" class="user-chip"></div></div>
+  <div class="grid-3">
+    <a class="card link-card" href="doctors.html"><div class="icon">👨‍⚕️</div><h3>Find a Doctor</h3><p>View available doctors and departments.</p></a>
+    <a class="card link-card" href="appointments.html"><div class="icon">📅</div><h3>Book Appointment</h3><p>Choose a doctor and appointment time.</p></a>
+    <a class="card link-card" href="pharmacy.html"><div class="icon">💊</div><h3>Pharmacy</h3><p>View medicines and stock information.</p></a>
+    <a class="card link-card" href="billing.html"><div class="icon">💳</div><h3>My Billing</h3><p>View sample hospital billing records.</p></a>
+  </div>
+</main>
+<script src="js/script.js"></script>
+<script>protectPage("user"); showSessionUser();</script>
+</body></html>
+</html>

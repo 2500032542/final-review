@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Appointments | MediCare</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare </a><nav><a href="admin.html">Admin</a><a href="user.html">User</a><a href="doctors.html">Doctors</a><a href="pharmacy.html">Pharmacy</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+<div class="page-head"><div><span class="eyebrow">Appointment Module</span><h1>Appointments</h1><p class="muted">Book and manage appointments.</p></div></div>
+<div class="form-card">
+<h3>Book Appointment</h3>
+<form id="appointmentForm" class="form-grid">
+<input id="appointmentPatient" placeholder="Patient name" required>
+<select id="appointmentDoctor" required></select>
+<input id="appointmentDate" type="date" required>
+<input id="appointmentTime" type="time" required>
+<button class="btn" type="submit">Book Appointment</button>
+</form></div>
+<div class="table-wrap"><table><thead><tr><th>Patient</th><th>Doctor</th><th>Date</th><th>Time</th><th>Status</th></tr></thead><tbody id="appointmentTable"></tbody></table></div>
+</main><script src="js/script.js"></script><script>protectPage(); renderAppointmentDoctors(); renderAppointments(); setupAppointmentForm();</script>
+</body></html>

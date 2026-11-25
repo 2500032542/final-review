@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administrator Dashboard | MediCare Hospital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare Admin</a><nav><a href="admin.html">Dashboard</a><a href="doctors.html">Doctors</a><a href="patients.html">Patients</a><a href="appointments.html">Appointments</a><a href="pharmacy.html">Pharmacy</a><a href="billing.html">Billing</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+  <div class="page-head"><div><span class="eyebrow">Admin Module</span><h1>Administrator Dashboard</h1><p class="muted">Manage the major hospital business modules.</p></div><div id="sessionUser" class="user-chip"></div></div>
+  <div class="stats-grid">
+    <div class="stat"><span>👨‍⚕️ Doctors</span><strong id="doctorCount">0</strong></div>
+    <div class="stat"><span>👤 Patients</span><strong id="patientCount">0</strong></div>
+    <div class="stat"><span>📅 Appointments</span><strong id="appointmentCount">0</strong></div>
+    <div class="stat"><span>💊 Medicines</span><strong id="medicineCount">0</strong></div>
+  </div>
+  <div class="grid-3">
+    <a class="card link-card" href="doctors.html"><div class="icon">👨‍⚕️</div><h3>Doctor Management</h3><p>Add and view doctors.</p></a>
+    <a class="card link-card" href="patients.html"><div class="icon">👤</div><h3>Patient Management</h3><p>View registered patients.</p></a>
+    <a class="card link-card" href="appointments.html"><div class="icon">📅</div><h3>Appointment Management</h3><p>View and manage appointments.</p></a>
+    <a class="card link-card" href="pharmacy.html"><div class="icon">💊</div><h3>Pharmacy</h3><p>Manage medicine stock.</p></a>
+    <a class="card link-card" href="billing.html"><div class="icon">💳</div><h3>Billing</h3><p>View hospital bills.</p></a>
+  </div>
+</main>
+<script src="js/script.js"></script>
+<script>protectPage("admin"); renderAdminStats();</script>
+</body></html>
+</html>

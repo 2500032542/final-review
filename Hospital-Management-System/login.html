@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | MediCare</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-bg">
+<div class="auth-wrap">
+  <div class="auth-card">
+    <a class="brand dark" href="index.html">🏥 MediCare</a>
+    <h1>Welcome back</h1>
+    <p class="muted">Login to access your hospital dashboard.</p>
+    <div id="message" class="message hidden"></div>
+    <form id="loginForm">
+      <label>Email</label>
+      <input id="loginEmail" type="email" placeholder="Enter email" required>
+      <label>Password</label>
+      <input id="loginPassword" type="password" placeholder="Enter password" required>
+      <label>Login as</label>
+      <select id="loginRole">
+        <option value="user">Patient / User</option>
+        <option value="admin">Administrator</option>
+      </select>
+      <button class="btn full" type="submit">Login</button>
+    </form>
+    <div class="demo-box">
+      <strong>Demo accounts</strong>
+      <p>Admin: admin@hospital.com / admin123</p>
+      <p>User: user@hospital.com / user123</p>
+    </div>
+    <p class="center">New user? <a href="signup.html">Create account</a></p>
+    <p class="center"><a href="index.html">← Back to Home</a></p>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

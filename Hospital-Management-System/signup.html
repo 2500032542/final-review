@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | MediCare</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-bg">
+<div class="auth-wrap">
+  <div class="auth-card">
+    <a class="brand dark" href="index.html">🏥 MediCare</a>
+    <h1>Create account</h1>
+    <p class="muted">Your account is stored in browser Local Storage for this prototype.</p>
+    <div id="message" class="message hidden"></div>
+    <form id="signupForm">
+      <label>Full Name</label>
+      <input id="signupName" type="text" placeholder="Enter full name" required>
+      <label>Email</label>
+      <input id="signupEmail" type="email" placeholder="Enter email" required>
+      <label>Password</label>
+      <input id="signupPassword" type="password" minlength="6" placeholder="Minimum 6 characters" required>
+      <label>Role</label>
+      <select id="signupRole">
+        <option value="user">Patient / User</option>
+        <option value="admin">Administrator</option>
+      </select>
+      <button class="btn full" type="submit">Create Account</button>
+    </form>
+    <p class="center">Already have an account? <a href="login.html">Login</a></p>
+    <p class="center"><a href="index.html">← Back to Home</a></p>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

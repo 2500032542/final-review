@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pharmacy | MediCare</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare </a><nav><a href="admin.html">Admin</a><a href="user.html">User</a><a href="appointments.html">Appointments</a><a href="billing.html">Billing</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+<div class="page-head"><div><span class="eyebrow">Pharmacy Module</span><h1>Pharmacy Management</h1><p class="muted">Medicine inventory for the prototype.</p></div></div>
+<div class="form-card admin-only">
+<h3>Add Medicine</h3>
+<form id="medicineForm" class="form-grid">
+<input id="medicineName" placeholder="Medicine name" required>
+<input id="medicineCategory" placeholder="Category" required>
+<input id="medicineStock" type="number" min="0" placeholder="Stock" required>
+<input id="medicinePrice" type="number" min="0" placeholder="Price" required>
+<button class="btn" type="submit">Add Medicine</button>
+</form></div>
+<div class="table-wrap"><table><thead><tr><th>Medicine</th><th>Category</th><th>Stock</th><th>Price</th></tr></thead><tbody id="medicineTable"></tbody></table></div>
+</main><script src="js/script.js"></script><script>protectPage(); renderMedicines(); setupMedicineForm();</script>
+</body></html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Billing | MediCare</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="brand" href="index.html">🏥 MediCare </a><nav><a href="admin.html">Admin</a><a href="user.html">User</a><a href="appointments.html">Appointments</a><a href="#">Logout</a><button class="logout-btn" onclick="logout()">Logout</button></nav></header>
+<main class="section dashboard-page">
+<div class="page-head"><div><span class="eyebrow">Billing Module</span><h1>Hospital Billing</h1><p class="muted">Sample billing records for demonstration.</p></div></div>
+<div class="table-wrap"><table><thead><tr><th>Bill ID</th><th>Patient</th><th>Service</th><th>Amount</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>B001</td><td>Rahul Kumar</td><td>Consultation</td><td>₹500</td><td><span class="status paid">Paid</span></td></tr>
+<tr><td>B002</td><td>Sneha Reddy</td><td>Lab Test</td><td>₹1,200</td><td><span class="status pending">Pending</span></td></tr>
+<tr><td>B003</td><td>Arjun Rao</td><td>Hospital Service</td><td>₹2,500</td><td><span class="status paid">Paid</span></td></tr>
+</tbody></table></div>
+</main><script src="js/script.js"></script><script>protectPage();</script>
+</body></html>
